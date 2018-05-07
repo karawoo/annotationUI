@@ -58,8 +58,6 @@ categories <- lapply(unique(dat$module), function(x) {x})
 key <- unique(dat$key)
 value <- unique(dat$value)
 
-all.vars <- names(dat)
-names(dat) <- c("key", "description", "columnType", "maximumSize", "value", "valueDescription", "source", "module")
 dat <- dat %>% mutate_all(as.character)
 
 # Get release version from syanpe table annotations
