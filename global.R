@@ -34,6 +34,10 @@ library(synapser)
 library(shinydashboard)
 library(data.table)
 library(DT)
+
+install_github("karawoo/syndccutils", subdir = "R", ref = "manifest-generation")
+library("syndccutils")
+
 # ----------------------------------------------------------------------
 # login to synapse 
 # synLogin('me@nowhere.com', 'secret', rememberMe = TRUE)
