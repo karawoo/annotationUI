@@ -51,8 +51,7 @@ options(stringsAsFactors = FALSE)
 
 # by replacing the global dat variable
 # you may use this app using the standard schema but your own melted data 
-queryResult <- synTableQuery('select * from syn10242922')
-dat <- queryResult$asDataFrame()[ ,-c(1,2)]
+dat <- get_synapse_annotations()
 print(head(dat))
 
 categories <- lapply(unique(dat$module), function(x) {x})
