@@ -170,7 +170,7 @@ server <- function(input, output, session) {
       }
       
       # create the manifest schema 
-      schema <- generate_manifest(user.cols)
+      schema <- generate_manifest_template(user.cols)
       
       # create the key and key-value description dataframes
       key.description <- generate_key_description(user.table)
