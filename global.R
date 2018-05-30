@@ -13,6 +13,8 @@ usePackage <- function(p, github, repos = getOption("repos"), ...) {
   }
   library(p, character.only = TRUE)
 }
+
+usePackage("devtools")
 usePackage("dplyr")
 usePackage("tidyr")
 usePackage("shiny")
